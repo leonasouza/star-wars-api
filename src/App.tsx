@@ -1,5 +1,7 @@
+import * as S from './App.styles.ts'
+
 function App() {
-  return <>ola</>
+  return <S.Container>ola</S.Container>
 }
 
 export default App
