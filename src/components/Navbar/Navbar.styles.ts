@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+// COMPONENTS
+import { Link as RouterLink } from 'react-router-dom'
+
 // HELPERS
 import { fontSize, spacing } from '@ui/helpers'
 
@@ -12,4 +15,12 @@ export const Container = styled.nav`
 
 export const MenuOption = styled.span`
   cursor: pointer;
+`
+
+interface LinkProps {
+  selected: boolean
+}
+
+export const Link = styled(RouterLink)<LinkProps>`
+  text-decoration: ${({ selected }) => (selected ? 'underline' : 'none')};
 `
