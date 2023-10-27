@@ -1,8 +1,17 @@
 import styled from 'styled-components'
 
-// HELPERS
-import { color } from '@ui/colors'
+// helpers
+import { color, spacing } from '@ui/helpers'
 
 export const Container = styled.header`
-  background-color: ${color('gray-900')};
+  display: flex;
+  align-items: flex-end;
+  background-color: ${color('blue-300')};
+  height: 200px;
+`
+
+export const Title = styled.h1`
+  font-size: 3rem;
+  font-weight: 500;
+  margin: ${spacing('huge')};
 `
