@@ -1,3 +1,5 @@
+import { Film, Specie, Starship, Vehicle } from '@types'
+
 export interface Person {
   name: string
   birth_year: string
@@ -8,18 +10,11 @@ export interface Person {
   mass: string
   skin_color: string
   homeworld: string
-  films: []
-  species: []
-  starships: []
-  vehicles: []
+  films: Film[]
+  species: Specie[]
+  starships: Starship[]
+  vehicles: Vehicle[]
   url: string
   created: string
   edited: string
-}
-
-export interface GetPeopleResponse {
-  count: number
-  next: string
-  previous: string
-  results: Person[]
 }
