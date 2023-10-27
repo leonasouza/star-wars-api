@@ -5,18 +5,25 @@ import { Routes, Route } from 'react-router-dom'
 import * as S from './App.styles.ts'
 
 // COMPONENTS
-import { Header, Home, Navbar } from '@components'
+import { Header, Home, Navbar, People } from '@components'
+
+// STATE MANAGEMENT
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
 
 function App() {
   return (
-    <S.Container>
-      <Header />
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/people' element={<>pipou</>} />
-      </Routes>
-    </S.Container>
+    <QueryClientProvider client={queryClient}>
+      <S.Container>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/people' element={<People />} />
+        </Routes>
+      </S.Container>
+    </QueryClientProvider>
   )
 }
 

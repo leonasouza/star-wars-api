@@ -1,4 +1,5 @@
 export * from './Header'
 export * from './Home'
 export * from './Navbar'
+export * from './People'
 export * from './SearchBar'

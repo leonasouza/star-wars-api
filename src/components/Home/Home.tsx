@@ -1,3 +1,4 @@
+// STYLES
 import * as S from './Home.styles.ts'
 
 export const Home = (): JSX.Element => {
