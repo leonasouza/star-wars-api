@@ -13,7 +13,6 @@ export const List = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: ${spacing('xxl')};
-  margin-top: ${spacing('xl')};
 `
 
 export const Name = styled.p`
