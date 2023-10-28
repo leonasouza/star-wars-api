@@ -1,5 +1,3 @@
-import { Film, Person } from '@types'
-
 export interface Specie {
   name: string
   classification: string
@@ -11,8 +9,8 @@ export interface Specie {
   skin_colors: string
   language: string
   homeworld: string
-  people: Person[]
-  films: Film[]
+  people: string[]
+  films: string[]
   url: string
   created: string
   edited: string

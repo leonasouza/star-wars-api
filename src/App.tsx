@@ -5,7 +5,8 @@ import { Routes, Route } from 'react-router-dom'
 import * as S from './App.styles.ts'
 
 // COMPONENTS
-import { Header, Home, Navbar, People } from '@components'
+import { Header, Navbar } from '@components'
+import { Home, People } from '@containers'
 
 // STATE MANAGEMENT
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'

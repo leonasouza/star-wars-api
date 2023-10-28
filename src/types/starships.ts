@@ -1,5 +1,3 @@
-import { Film, Person } from '@types'
-
 export interface Starship {
   name: string
   model: string
@@ -14,8 +12,8 @@ export interface Starship {
   MGLT: string
   cargo_capacity: string
   consumables: string
-  films: Film[]
-  pilots: Person[]
+  films: string[]
+  pilots: string[]
   url: string
   created: string
   edited: string

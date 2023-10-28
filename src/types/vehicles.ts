@@ -1,5 +1,3 @@
-import { Film, Person } from '@types'
-
 export interface Vehicle {
   name: string
   model: string
@@ -12,8 +10,8 @@ export interface Vehicle {
   max_atmosphering_speed: string
   cargo_capacity: string
   consumables: string
-  films: Film[]
-  pilots: Person[]
+  films: string[]
+  pilots: string[]
   url: string
   created: string
   edited: string

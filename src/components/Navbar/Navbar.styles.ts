@@ -22,5 +22,5 @@ interface LinkProps {
 }
 
 export const Link = styled(RouterLink)<LinkProps>`
-  text-decoration: ${({ selected }) => (selected ? 'underline' : 'none')};
+  font-weight: ${({ selected }) => (selected ? '500' : '300')};
 `

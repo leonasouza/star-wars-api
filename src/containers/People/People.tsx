@@ -6,6 +6,9 @@ import * as S from './People.styles.ts'
 // API
 import { useGetAllPeople } from '@services/people'
 
+// COMPONENTS
+import { Card } from '@ui'
+
 // TYPES
 import { Person } from '@types'
 
@@ -22,8 +25,16 @@ export const People = (): JSX.Element => {
 
   return (
     <S.Container>
-      <S.Title>People</S.Title>
-      <S.Description>{people.map((person) => person.name)}</S.Description>
+      <S.List>
+        {people.map((person) => (
+          <Card key={person.name}>
+            <S.Name>{person.name}</S.Name>
+            <S.Gender>{person.gender}</S.Gender>
+            <S.Height>{person.height} m</S.Height>
+            <S.Mass>{person.mass} kg</S.Mass>
+          </Card>
+        ))}
+      </S.List>
     </S.Container>
   )
 }

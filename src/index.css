@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html {
-	height: 100vh;
+	min-height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 }
 body {

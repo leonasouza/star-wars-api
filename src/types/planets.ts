@@ -1,5 +1,3 @@
-import { Film, Person } from '@types'
-
 export interface Planet {
   name: string
   diameter: string
@@ -10,8 +8,8 @@ export interface Planet {
   climate: string
   terrain: string
   surface_water: string
-  residents: Person[]
-  films: Film[]
+  residents: string[]
+  films: string[]
   url: string
   created: string
   edited: string

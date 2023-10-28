@@ -1,5 +1,3 @@
-import { Person, Planet, Specie, Starship, Vehicle } from '@types'
-
 export interface Film {
   title: string
   episode_id: number
@@ -7,11 +5,11 @@ export interface Film {
   director: string
   producer: string
   release_date: Date
-  species: Specie[]
-  starships: Starship[]
-  vehicles: Vehicle[]
-  characters: Person[]
-  planets: Planet[]
+  species: string[]
+  starships: string[]
+  vehicles: string[]
+  characters: string[]
+  planets: string[]
   url: string
   created: string
   edited: string
